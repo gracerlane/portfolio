@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import logo from "../assets/logo.png"
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
@@ -9,7 +10,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
       <div className="max-w-5xl mx-auto px-5">
         <div className="flex justify-between items-center h-16 text-black">
           <a href="#home" className="max-w-12 font-mono text-xl font-bold text-black">
-            <img src="\src\assets\logo.png" alt="Grace Lane" />
+            <img src={logo} alt="G" />
           </a>
 
           <div
