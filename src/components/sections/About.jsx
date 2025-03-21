@@ -31,7 +31,7 @@ export const About = () => {
     >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-pink-400 to-pink-80 bg-clip-text text-transparent text-center">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-pink-400 to-pink-111 bg-clip-text text-transparent text-center">
             {" "}
             About Me
           </h2>
@@ -91,11 +91,11 @@ export const About = () => {
               <ul className="list-inside text-black-300 space-y-2">
                 <li>
                   <strong> B.S. in Computer Science and Minor in Business Finance </strong><br/>
-									<span className="text-gray-500">Seattle University (2021 - 2025)</span>
+									<span className="text-gray-500 text-sm">Seattle University (2021 - 2025)</span>
                 </li>
                 <li>
                   <strong> Relevant Coursework: </strong> <br />
-									<span className="text-gray-500">
+									<span className="text-gray-500 text-sm">
 									Data Structures <br />
 									Web Development <br />
 									Design and Analysis of Algorithms <br />
@@ -111,13 +111,13 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4"> Experience </h3>
               <div className="space-y-4 text-black-300">
                 <div>
-                  <h4 className="font-semibold ">
+                  <h1 className="font-semibold ">
                     {" "}
                     Artificial Inteligence Research and Development Intern (2024 - Present)
 										{" "}
-                  </h4>
-									<h1 className="text-gray-500">
-										PortX | <span className="text-xs"> Mercer Island, WA </span>
+                  </h1>
+									<h1 className="text-gray-500 text-xs">
+										PortX | Mercer Island, WA
 									</h1>
                   <p>
                     {/* Conducted rigorous research to develop new company platform features that utilizes modern aritificial intelligence tools. */}
@@ -129,8 +129,8 @@ export const About = () => {
 										Computer Science Grader (01/2024 - 03/2024)
 										{""}
 									</h4>
-									<h1 className="text-gray-500">
-										Seattle University | <span className="text-xs"> Seattle, WA </span>
+									<h1 className="text-gray-500 text-xs">
+										Seattle University | Seattle, WA 
 									</h1>
 									<p>
                   </p>
@@ -141,8 +141,8 @@ export const About = () => {
 										Marketing Intern & Service Department Receptionist (Summer 2023)
 										{""}
 									</h4>
-									<h1 className="text-gray-500">
-										Dwayne Lane’s Auto Family | <span className="text-xs"> Everett, WA </span>
+									<h1 className="text-gray-500 text-xs">
+										Dwayne Lane’s Auto Family | Everett, WA 
 									</h1>
 									<p>
                   </p>
@@ -153,8 +153,8 @@ export const About = () => {
 										Information Technology Support Specialist Intern (Summer 2021 & 2022)
 										{""}
 									</h4>
-									<h1 className="text-gray-500">
-										Coastal Community Bank | <span className="text-xs"> Everett, WA </span>
+									<h1 className="text-gray-500 text-xs">
+										Coastal Community Bank |  Everett, WA 
 									</h1>
 									<p>
                   </p>
