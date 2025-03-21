@@ -9,11 +9,11 @@ export const Projects = () => {
     >
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-pink-400 to-pink-80 bg-clip-text text-transparent text-center">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-pink-400 to-pink-200 bg-clip-text text-transparent text-center">
             {" "}
             Featured Projects
           </h2>
-          <div className="min-w-2xl grid grid-cols-1 md:grid-cols-1 gap-6 text-center justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-6 text-center justify-center">
             <div className="p-6 rounded-xl border border-gray-500/30 ">
               <h3 className="text-xl font-bold mb-2"> Capstone Project</h3>
               <p className="text-gray-400 mb-4">
