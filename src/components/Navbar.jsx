@@ -1,10 +1,36 @@
-import { useEffect } from "react";
-import logo from "../assets/logo.png"
+import { useEffect, useState } from "react";
+import logo from "../assets/logo.png";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
+  const [activeSection, setActiveSection] = useState("home"); // Default to "home"
+
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
+
+    const handleScroll = () => {
+      const sections = ["home", "about", "projects", "contact"];
+      let currentSection = "home"; // Default to "home"
+
+      sections.forEach((section) => {
+        const el = document.getElementById(section);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            currentSection = section;
+          }
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    // Call handleScroll initially to set active section on load
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [menuOpen]);
+
   return (
     <nav className="fixed top-0 w-full z-40 bg-white backdrop-blur-lg border-b border-black/20 shadow-lg">
       <div className="max-w-5xl mx-auto px-5">
@@ -21,34 +47,17 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#home"
-              className="hover:text-gray-500 transition-colors"
-            >
-              {" "}
-              Home
-            </a>
-            <a
-              href="#about"
-              className="hover:text-gray-500 transition-colors"
-            >
-              {" "}
-              About{" "}
-            </a>
-            <a
-              href="#projects"
-              className="hover:text-gray-500 transition-colors"
-            >
-              {" "}
-              Projects{" "}
-            </a>
-            <a
-              href="#contact"
-              className="hover:text-gray-500 transition-colors"
-            >
-              {" "}
-              Contact{" "}
-            </a>
+            {["home", "about", "projects", "contact"].map((section) => (
+              <a
+                key={section}
+                href={`#${section}`}
+                className={`hover:text-pink-400 transition-colors ${
+                  activeSection === section ? "text-pink-400" : ""
+                }`}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </a>
+            ))}
           </div>
         </div>
       </div>

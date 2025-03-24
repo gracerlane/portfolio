@@ -42,7 +42,7 @@ export const Contact = () => {
     >
       <RevealOnScroll>
         <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-pink-400 to-pink-90 bg-clip-text text-transparent text-center">
+          <h2 className="mx-auto w-45 text-3xl font-bold mb-8 bg-gradient-to-r from-pink-400 to-pink-200 bg-clip-text text-transparent text-center">
             {" "}
             Get In Touch
           </h2>
