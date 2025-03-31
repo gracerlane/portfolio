@@ -13,7 +13,7 @@ export const Home = () => {
           </h1>
 
           <p className="tex-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-						I am a recent graduate with a B.S. in Computer Science with a minor in Business Finance from Seattle University. I enjoy new challenges to learn and grow both professionally and as an individual. I am looking to broaden my experience in the tech industry that could lead to a full time career.
+						I am a recent graduate with a B.S. in Computer Science and a minor in Business Finance from Seattle University. I enjoy new challenges to learn and grow both professionally and as an individual. I am looking to broaden my experience in the tech industry that could lead to a full time career.
           </p>
           <div className="flex justify-center space-x-4">
             <a
