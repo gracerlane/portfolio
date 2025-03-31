@@ -8,19 +8,22 @@ export const Projects = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-pink-400 to-pink-200 bg-clip-text text-transparent text-center">
+        <div className="max-w-xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 bg-pink-300 bg-clip-text text-transparent text-center">
             {" "}
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-1 gap-6 text-center justify-center">
             <div className="p-6 rounded-xl border border-gray-500/30 ">
               <h3 className="text-xl font-bold mb-2"> Capstone Project</h3>
-              <p className="text-gray-400 mb-4">
+              <p className="text-gray-400 mb-0">
 								NASA Web-based Game
               </p>
+							<p className="text-gray-400 mb-4 text-sm">
+								A web-based game that allows users to experience the NASA-ASU Psyche mission through a series of minigames. The game is designed to be educational and engaging, providing users with a fun way to learn about the mission and garner excitement about the mission.
+              </p>
               <div className="flex flex-wrap gap-2 mb-4 justify-center">
-                {["GDScript", "HTML",].map((tech, key) => (
+                {["GDScript",].map((tech, key) => (
                   <span
                     key={key}
                     className="bg-pink-500/10 text-pink-400 py-1 px-3 rounded-full text-sm 
