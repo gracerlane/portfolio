@@ -91,9 +91,19 @@ export const About = () => {
               <ul className="list-inside text-black-300 space-y-2">
                 <li>
                   <strong> B.S. in Computer Science and Minor in Business Finance </strong><br/>
-									<span className="text-gray-500 text-sm">Seattle University (2021 - 2025)</span>
+									<span className="text-gray-500 text-sm">Seattle University (2021 - 2025)</span><br/>
+									<span className="text-gray-500 text-sm">GPA: 3.9</span>
                 </li>
-                <li>
+								<li>
+                  <strong> Awards and Honors: </strong> <br />
+									<span className="text-gray-500 text-sm">
+									Magna Cum Laude <br />
+									Alpha Sigma Nu Honor Society <br />
+									Dean's List <br />
+									President's List <br />
+									</span>
+                </li>
+								<li>
                   <strong> Relevant Coursework: </strong> <br />
 									<span className="text-gray-500 text-sm">
 									Data Structures <br />
