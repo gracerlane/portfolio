@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import { useState, useEffect } from "react";
 
 export const About = () => {
   const frontendSkills = [
@@ -23,6 +24,35 @@ export const About = () => {
 		"Scrum",
 		"Critical Thinking",
 	];
+
+	const [openJob, setOpenJob] = useState(null);
+
+	const toggleJob = (job) => {
+    setOpenJob(openJob === job ? null : job);
+  };
+
+	const experiences = [
+		{
+      title: "Artificial Intelligence Research and Development Intern (2024 - Present)",
+      company: "PortX | Mercer Island, WA",
+      description: "Conducted rigorous research to develop new company platform features that utilize modern artificial intelligence tools. Collaborated with cross-functional teams to integrate AI-driven solutions into existing workflows.",
+    },
+    {
+      title: "Computer Science Grader (01/2024 - 03/2024)",
+      company: "Seattle University | Seattle, WA",
+      description: "Assisted professors in grading programming assignments and providing constructive feedback to students. Managed grades for over 20 students.",
+    },
+    {
+      title: "Marketing Intern & Service Department Receptionist (Summer 2023)",
+      company: "Dwayne Lane’s Auto Family | Everett, WA",
+      description: "Created social media content and analyzed customer engagement data. Took on addiional responsibilities as a receptionist, including answering phones and assisting customers with inquiries.",
+    },
+    {
+      title: "Information Technology Support Specialist Intern (Summer 2021 & 2022)",
+      company: "Coastal Community Bank | Everett, WA",
+      description: "Provided technical support for employees, including troubleshooting hardware and software issues. Assisted in the setup and maintenance of computer systems and networks. Built over 100 laptops for new and current employees.",
+    },
+  ];
 
   return (
     <section
@@ -117,62 +147,35 @@ export const About = () => {
                 </li>
               </ul>
             </div>
-            <div className="p-6 rounded-xl border-black/20 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> Experience </h3>
-              <div className="space-y-4 text-black-300">
-                <div>
-                  <h1 className="font-semibold ">
-                    {" "}
-                    Artificial Inteligence Research and Development Intern (2024 - Present)
-										{" "}
-                  </h1>
-									<h1 className="text-gray-500 text-xs">
-										PortX | Mercer Island, WA
-									</h1>
-                  <p>
-                    {/* Conducted rigorous research to develop new company platform features that utilizes modern aritificial intelligence tools. */}
-                  </p>
-                </div>
-								<div>
-									<h4 className="font-semibold">
-										{" "}
-										Computer Science Grader (01/2024 - 03/2024)
-										{""}
-									</h4>
-									<h1 className="text-gray-500 text-xs">
-										Seattle University | Seattle, WA 
-									</h1>
-									<p>
-                  </p>
-								</div>
-								<div>
-									<h4 className="font-semibold">
-										{" "}
-										Marketing Intern & Service Department Receptionist (Summer 2023)
-										{""}
-									</h4>
-									<h1 className="text-gray-500 text-xs">
-										Dwayne Lane’s Auto Family | Everett, WA 
-									</h1>
-									<p>
-                  </p>
-                </div>
-								<div>
-									<h4 className="font-semibold">
-										{" "}
-										Information Technology Support Specialist Intern (Summer 2021 & 2022)
-										{""}
-									</h4>
-									<h1 className="text-gray-500 text-xs">
-										Coastal Community Bank |  Everett, WA 
-									</h1>
-									<p>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+						<div className="p-6 rounded-xl border-black/20 border hover:-translate-y-1 transition-all">
+							<h3 className="text-xl font-bold mb-0">Experience</h3>
+							<div className="p-0">
+								{experiences.map((job, index) => (
+									<div key={index}>
+										<h4
+											className="font-semibold cursor-pointer flex justify-between items-center mt-4"
+											onClick={() => toggleJob(index)}
+										>
+											{job.title}
+											<span className="text-pink-300">{openJob === index ? "-" : "+"}</span>
+										</h4>
+										<h5 className="text-gray-500 text-xs mb-0">{job.company}</h5>
+
+										<div
+											className={`overflow-hidden transition-all duration-300 ease-in-out ${
+												openJob === index ? "max-h-40 opacity-100 py-2" : "max-h-0 opacity-0"
+											}`}
+										>
+											<p className="text-gray-600 bg-gray-100 p-2 rounded-lg text-xs">
+												{job.description}
+											</p>
+										</div>
+									</div>
+								))}
+							</div>
+						</div>
+					</div>
+				</div>
       </RevealOnScroll>
     </section>
   );
