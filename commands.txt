@@ -1,0 +1,6 @@
+----- UPLOAD TO GITHUB -----
+git add .
+git commit -m "add command file"
+git branch -M main
+git remote add origin https://github.com/gracerlane/portfolio.git
+git push -u origin main
