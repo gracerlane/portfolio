@@ -1,10 +1,5 @@
------ UPLOAD TO GITHUB -----
 git add .
-git commit -m "update contact form submission"
+git commit -m "reverse"
 git branch -M main
 git remote add origin https://github.com/gracerlane/portfolio.git
 git push -u origin main
-
-
-npm install emailjs-com  
-npm install emailjs.com/browser

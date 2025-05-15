@@ -35,7 +35,7 @@ export const Projects = () => {
               </div>
 
               <div className="flex justify-center items-center">
-                <a href="https://psyche-capstone-web-projects.web.app/game_page/?gameId=super%20psyched" target="_blank" className="text-pink-400 hover:text-pink-300 transition-colors my-4">
+                <a href="https://gracerlane.github.io/superpsyched" target="_blank" className="text-pink-400 hover:text-pink-300 transition-colors my-4">
                   View Project →
                 </a>
               </div>
