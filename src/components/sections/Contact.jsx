@@ -42,7 +42,7 @@ export const Contact = () => {
     >
       <RevealOnScroll>
         <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
-          <h2 className="mx-auto w-45 text-3xl font-bold mb-8 bg-pink-300 bg-clip-text text-transparent text-center">
+          <h2 className="mx-auto w-45 text-3xl font-bold mb-8 bg-black bg-clip-text text-transparent text-center">
             {" "}
             Get In Touch
           </h2>
@@ -94,7 +94,7 @@ export const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-pink-500/50 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:bg-pink-400 cursor-pointer"
+              className="w-full bg-gray-500/50 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:bg-gray-400 cursor-pointer"
             >
               Send Message
             </button>

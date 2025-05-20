@@ -62,7 +62,7 @@ export const About = () => {
       <RevealOnScroll>
 				
         <div className="max-w-5xl mx-auto px-4">
-					<h2 className="mx-auto w-40 text-3xl font-bold mb-8 bg-pink-300 bg-clip-text text-transparent text-center">
+					<h2 className="mx-auto w-40 text-3xl font-bold mb-8 bg-black bg-clip-text text-transparent text-center">
 						{" "}
 						About Me
 					</h2>
@@ -78,7 +78,7 @@ export const About = () => {
                   {frontendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-pink-400/10 text-pink-400 py-1 px-3 rounded-full text-sm"
+                      className="bg-gray-400/10 text-black py-1 px-3 rounded-full text-sm"
                     >
                       {tech}
                     </span>
@@ -92,7 +92,7 @@ export const About = () => {
                   {backendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-pink-400/10 text-pink-400 py-1 px-3 rounded-full text-sm"
+                      className="bg-gray-400/10 text-black-400 py-1 px-3 rounded-full text-sm"
                     >
                       {tech}
                     </span>
@@ -106,7 +106,7 @@ export const About = () => {
 								{softSkills.map((tech, key) => (
 									<span
 										key={key}
-										className="bg-pink-400/10 text-pink-400 py-1 px-3 rounded-full text-sm"
+										className="bg-gray-400/10 text-black-400 py-1 px-3 rounded-full text-sm"
 									>
 										{tech}
 									</span>

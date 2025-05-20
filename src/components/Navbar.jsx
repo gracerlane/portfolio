@@ -51,8 +51,8 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               <a
                 key={section}
                 href={`#${section}`}
-                className={`hover:text-pink-400 transition-colors ${
-                  activeSection === section ? "text-pink-400" : ""
+                className={`hover:text-gray-400 transition-colors ${
+                  activeSection === section ? "text-gray-400" : ""
                 }`}
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}

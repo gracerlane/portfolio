@@ -9,7 +9,7 @@ export const Projects = () => {
     >
       <RevealOnScroll>
         <div className="max-w-xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-pink-300 bg-clip-text text-transparent text-center">
+          <h2 className="text-3xl font-bold mb-8 bg-black bg-clip-text text-transparent text-center">
             {" "}
             Featured Projects
           </h2>
@@ -26,7 +26,7 @@ export const Projects = () => {
                 {["GDScript",].map((tech, key) => (
                   <span
                     key={key}
-                    className="bg-pink-500/10 text-pink-400 py-1 px-3 rounded-full text-sm 
+                    className="bg-gray-500/10 text-black py-1 px-3 rounded-full text-sm 
                                     hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
                   >
                     {tech}
@@ -35,7 +35,7 @@ export const Projects = () => {
               </div>
 
               <div className="flex justify-center items-center">
-                <a href="https://gracerlane.github.io/superpsyched" target="_blank" className="text-pink-400 hover:text-pink-300 transition-colors my-4">
+                <a href="https://gracerlane.github.io/superpsyched" target="_blank" className="text-black hover:text-pink-300 transition-colors my-4">
                   View Project →
                 </a>
               </div>
