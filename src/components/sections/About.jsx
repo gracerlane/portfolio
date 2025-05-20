@@ -33,7 +33,7 @@ export const About = () => {
 
 	const experiences = [
 		{
-      title: "Artificial Intelligence Research and Development Intern (2024 - Present)",
+      title: "Artificial Intelligence Research and Development Intern (06/2024 - 04/2025)",
       company: "PortX | Mercer Island, WA",
       description: "Conducted rigorous research to develop new company platform features that utilize modern artificial intelligence tools. Collaborated with cross-functional teams to integrate AI-driven solutions into existing workflows.",
     },
@@ -43,12 +43,12 @@ export const About = () => {
       description: "Assisted professors in grading programming assignments and providing constructive feedback to students. Managed grades for over 20 students.",
     },
     {
-      title: "Marketing Intern & Service Department Receptionist (Summer 2023)",
+      title: "Marketing Intern & Service Department Receptionist (05/2023 - 09/2023)",
       company: "Dwayne Lane’s Auto Family | Everett, WA",
       description: "Created social media content and analyzed customer engagement data. Took on addiional responsibilities as a receptionist, including answering phones and assisting customers with inquiries.",
     },
     {
-      title: "Information Technology Support Specialist Intern (Summer 2021 & 2022)",
+      title: "Information Technology Support Specialist Intern (06/2021 - 09/2021 & 06/2022 - 09/2022)",
       company: "Coastal Community Bank | Everett, WA",
       description: "Provided technical support for employees, including troubleshooting hardware and software issues. Assisted in the setup and maintenance of computer systems and networks. Built over 100 laptops for new and current employees.",
     },
