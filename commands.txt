@@ -1,5 +1,9 @@
 git add .
-git commit -m "change to boring colors :("
+git commit -m "change project link and description"
 git branch -M main
 git remote add origin https://github.com/gracerlane/portfolio.git
 git push -u origin main
+
+
+----- TO DEPLOY THE SITE -----
+npm run deploy

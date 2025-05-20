@@ -20,7 +20,7 @@ export const Projects = () => {
 								NASA Web-based Game
               </p>
 							<p className="text-gray-400 mb-4 text-sm">
-								A web-based game that allows users to experience the NASA-ASU Psyche mission through a series of minigames. The game is designed to be educational and engaging, providing users with a fun way to learn about the mission and garner excitement about the mission.
+								A team project that developed a web-based game that allows users to experience the Psyche mission through a series of minigames. The game is designed to be educational and engaging, providing users with a fun way to learn about the mission and garner excitement about the mission.
               </p>
               <div className="flex flex-wrap gap-2 mb-4 justify-center">
                 {["GDScript",].map((tech, key) => (
@@ -35,7 +35,7 @@ export const Projects = () => {
               </div>
 
               <div className="flex justify-center items-center">
-                <a href="https://gracerlane.github.io/superpsyched" target="_blank" className="text-black hover:text-pink-300 transition-colors my-4">
+                <a href="https://psyche-capstone-web-projects.web.app/game_page/?gameId=super%20psyched" target="_blank" className="text-black hover:text-pink-300 transition-colors my-4">
                   View Project →
                 </a>
               </div>
