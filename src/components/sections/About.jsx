@@ -69,21 +69,19 @@ export const About = () => {
               
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4"> Hard Skills </h3>
-                <div className="flex flex-wrap gap-2">
-                  {hardSkills.map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-gray-400/10 text-black py-1 px-3 rounded-full text-sm"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
+						<div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+							<h3 className="text-xl font-bold mb-4"> Hard Skills </h3>
+							<div className="flex flex-wrap gap-2">
+								{hardSkills.map((tech, key) => (
+									<span
+										key={key}
+										className="bg-gray-400/10 text-black py-1 px-3 rounded-full text-sm"
+									>
+										{tech}
+									</span>
+								))}
+							</div>
+						</div>
 						<div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
 							<h3 className="text-xl font-bold mb-4"> Soft Skills </h3>
 							<div className="flex flex-wrap gap-2">
