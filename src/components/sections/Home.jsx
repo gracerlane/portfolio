@@ -18,7 +18,7 @@ export const Home = () => {
           <div className="flex justify-center space-x-4">
             <a
               href="#projects"
-              className="bg-black text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:bg-pink-500/50"
+              className="bg-black text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-pink-500/50"
             >
               View Projects
             </a>
@@ -26,7 +26,7 @@ export const Home = () => {
             <a
               href="#contact"
               className="border border-black text-black py-3 px-6 rounded font-medium transition-all duration-200 
-             hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-pink-500/10"
+             hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:text-pink-500/50 hover:border-pink-500/50"
             >
               Contact Me
             </a>

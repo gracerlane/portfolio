@@ -31,25 +31,30 @@ export const About = () => {
 
 	const experiences = [
 		{
-      title: "Artificial Intelligence Research and Development Intern (06/2024 - 04/2025)",
-      company: "PortX | Mercer Island, WA",
-      description: "Conducted rigorous research to develop new company platform features that utilize modern artificial intelligence tools. Collaborated with cross-functional teams to integrate AI-driven solutions into existing workflows.",
-    },
-    {
-      title: "Computer Science Grader (01/2024 - 03/2024)",
-      company: "Seattle University | Seattle, WA",
-      description: "Assisted professors in grading programming assignments and providing constructive feedback to students. Managed grades for over 20 students.",
-    },
-    {
-      title: "Marketing Intern & Service Department Receptionist (05/2023 - 09/2023)",
-      company: "Dwayne Lane’s Auto Family | Everett, WA",
-      description: "Created social media content and analyzed customer engagement data. Took on addiional responsibilities as a receptionist, including answering phones and assisting customers with inquiries.",
-    },
-    {
-      title: "Information Technology Support Specialist Intern (06/2021 - 09/2021 & 06/2022 - 09/2022)",
-      company: "Coastal Community Bank | Everett, WA",
-      description: "Provided technical support for employees, including troubleshooting hardware and software issues. Assisted in the setup and maintenance of computer systems and networks. Built over 100 laptops for new and current employees.",
-    },
+			title: "Commercial Systems Intern (06/2025 – Present)",
+			company: "Tektronix | Beaverton, OR",
+			description: "Leading the development of a Power BI dashboard to deliver actionable insights into commercial systems performance. Assisting in software development and testing, collaborating with senior engineers to implement new features, optimize existing functionality, and apply industry-standard development practices."
+		},
+		{
+			title: "Artificial Intelligence R&D Intern (06/2024 – 04/2025)",
+			company: "PortX | Mercer Island, WA",
+			description: "Researched and prototyped AI-powered features for the company platform, leveraging modern machine learning tools. Partnered with cross-functional teams to integrate AI-driven solutions into production workflows."
+		},
+		{
+			title: "Computer Science Grader (01/2024 – 03/2024)",
+			company: "Seattle University | Seattle, WA",
+			description: "Evaluated programming assignments for over 20 students, ensuring grading consistency and accuracy. Provided constructive, actionable feedback to support student learning and technical growth."
+		},
+		{
+			title: "Marketing Intern & Service Department Receptionist (05/2023 – 09/2023)",
+			company: "Dwayne Lane’s Auto Family | Everett, WA",
+		description: "Created and scheduled targeted social media content, analyzing engagement metrics to refine marketing strategies. Represented the company at community events to strengthen brand presence and customer relationships. Oversaw front-desk operations, providing phone and in-person support while coordinating service appointments with staff."
+		},
+		{
+			title: "IT Support Specialist Intern (06/2021 – 09/2021 & 06/2022 – 09/2022)",
+			company: "Coastal Community Bank | Everett, WA",
+			description: "Provided technical support for employees, diagnosing, and resolving hardware and software issues. Deployed and configured over 100 laptops, and assisted in maintaining secure, reliable network systems."
+		},
   ];
 
   return (
@@ -69,7 +74,7 @@ export const About = () => {
               
             </p>
 
-						<div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+						<div className="rounded-xl p-6">
 							<h3 className="text-xl font-bold mb-4"> Hard Skills </h3>
 							<div className="flex flex-wrap gap-2">
 								{hardSkills.map((tech, key) => (
@@ -82,7 +87,7 @@ export const About = () => {
 								))}
 							</div>
 						</div>
-						<div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+						<div className="rounded-xl p-6">
 							<h3 className="text-xl font-bold mb-4"> Soft Skills </h3>
 							<div className="flex flex-wrap gap-2">
 								{softSkills.map((tech, key) => (
@@ -98,7 +103,7 @@ export const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border-black/20 border hover:-translate-y-1 transition-all">
+            <div className="p-6 rounded-xl border-black/20 border">
               <h3 className="text-xl font-bold mb-4"> Education </h3>
               <ul className="list-inside text-black-300 space-y-2">
                 <li>
@@ -129,7 +134,7 @@ export const About = () => {
                 </li>
               </ul>
             </div>
-						<div className="p-6 rounded-xl border-black/20 border hover:-translate-y-1 transition-all">
+						<div className="p-6 rounded-xl border-black/20 border">
 							<h3 className="text-xl font-bold mb-0">Experience</h3>
 							<div className="p-0">
 								{experiences.map((job, index) => (
@@ -139,7 +144,7 @@ export const About = () => {
 											onClick={() => toggleJob(index)}
 										>
 											{job.title}
-											<span className="text-pink-300">{openJob === index ? "-" : "+"}</span>
+											<span className="p-0.5 text-pink-300">{openJob === index ? "-" : "+"}</span>
 										</h4>
 										<h5 className="text-gray-500 text-xs mb-0">{job.company}</h5>
 
