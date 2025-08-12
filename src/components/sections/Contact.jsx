@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,20 +13,26 @@ export const Contact = () => {
 	
 
   const handleSubmit = (e) => {
+		console.log("Service ID:", import.meta.env.VITE_SERVICE_ID);
+		console.log("Template ID:", import.meta.env.VITE_TEMPLATE_ID);
+		console.log("Public Key:", import.meta.env.VITE_PUBLIC_KEY);
+
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        e.target,
-        import.meta.env.VITE_PUBLIC_KEY
-      )
+    emailjs.sendForm(
+			import.meta.env.VITE_SERVICE_ID,
+			import.meta.env.VITE_TEMPLATE_ID,
+			e.target,
+			import.meta.env.VITE_PUBLIC_KEY
+		)
       .then((result) => {
         alert("Message Sent!");
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => alert("Oops! Something went wrong. Please try again."));
+      .catch(() => {
+				// console.error("EmailJS Error:", error);
+				alert("Oops! Something went wrong. Please try again.");
+			});
   };
 	
   return (
@@ -35,7 +42,7 @@ export const Contact = () => {
     >
       <RevealOnScroll>
         <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-pink-400 to-pink-90 bg-clip-text text-transparent text-center">
+          <h2 className="mx-auto w-45 text-3xl font-bold mb-8 bg-black bg-clip-text text-transparent text-center">
             {" "}
             Get In Touch
           </h2>
@@ -87,7 +94,7 @@ export const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-pink-500/50 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:bg-pink-400 cursor-pointer"
+              className="w-full bg-gray-500/50 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:bg-gray-400 cursor-pointer"
             >
               Send Message
             </button>
