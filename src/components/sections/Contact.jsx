@@ -28,7 +28,7 @@ export const Contact = () => {
 		)
       .then((result) => {
         alert("Thank you for your message! I will get back to you as soon as possible.");
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", title: "", message: "" });
       })
       .catch((error) => {
 				console.error("EmailJS Error:", error);
