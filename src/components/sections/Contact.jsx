@@ -29,8 +29,8 @@ export const Contact = () => {
         alert("Message Sent!");
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => {
-				// console.error("EmailJS Error:", error);
+      .catch((error) => {
+				console.error("EmailJS Error:", error);
 				alert("Oops! Something went wrong. Please try again.");
 			});
   };
