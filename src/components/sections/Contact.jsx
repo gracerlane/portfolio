@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser";
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
+		title: "",
     email: "",
     message: "",
   });
@@ -26,7 +27,7 @@ export const Contact = () => {
 			import.meta.env.VITE_PUBLIC_KEY
 		)
       .then((result) => {
-        alert("Message Sent!");
+        alert("Thank you for your message! I will get back to you as soon as possible.");
         setFormData({ name: "", email: "", message: "" });
       })
       .catch((error) => {
