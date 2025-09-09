@@ -56,7 +56,7 @@ export const Contact = () => {
                 required
                 value={formData.name}
                 className="w-full bg-gray/5 border border-gray/10 rounded px-4 py-3 text-gray transition focus:outline-none focus:border-pink-500 focus:bg-pink-500/5"
-                placeholder="Name..."
+                placeholder="Your Name..."
                 onChange={(e) =>
                   setFormData({ ...formData, name: e.target.value })
                 }
@@ -71,15 +71,31 @@ export const Contact = () => {
                 required
                 value={formData.email}
                 className="w-full bg-gray/5 border border-gray/10 rounded px-4 py-3 text-gray transition focus:outline-none focus:border-pink-500 focus:bg-pink-500/5"
-                placeholder="example@gmail.com"
+                placeholder="yourexample@gmail.com"
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
                 }
               />
             </div>
 
+						<div className="relative">
+              <input
+                type="text"
+                id="title"
+                name="title"
+                required
+                value={formData.title}
+                className="w-full bg-gray/5 border border-gray/10 rounded px-4 py-3 text-gray transition focus:outline-none focus:border-pink-500 focus:bg-pink-500/5"
+                placeholder="Subject Line..."
+                onChange={(e) =>
+                  setFormData({ ...formData, title: e.target.value })
+                }
+              />
+            </div>
+
             <div className="relative">
               <textarea
+								type="text"
                 id="message"
                 name="message"
                 required
@@ -95,7 +111,7 @@ export const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-gray-500/50 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:bg-gray-400 cursor-pointer"
+              className="w-full bg-black text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:bg-gray-500 cursor-pointer hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)]"
             >
               Send Message
             </button>
